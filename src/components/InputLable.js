@@ -1,10 +1,15 @@
 
 
-export default function InputLabel(){
+export default function InputLabel({label, value, type, placeholder, onChange}){
     return(
         <div>
-            <label>Nome</label>
-            <input type="text" placeholder="Digite seu nome" />
+            <label>{label}</label>        
+            <input 
+                type={type} 
+                placeholder={placeholder} 
+                value={value}
+                onChange={onChange}
+            />
         </div>
     )
 }
