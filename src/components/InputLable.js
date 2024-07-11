@@ -2,8 +2,8 @@
 
 export default function InputLabel({label, value, type, placeholder, onChange}){
     return(
-        <div>
-            <label>{label}</label>        
+        <div className="inputLabel column">
+            <label className="textBold">{label}</label>        
             <input 
                 type={type} 
                 placeholder={placeholder} 
