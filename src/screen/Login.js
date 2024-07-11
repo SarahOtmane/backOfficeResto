@@ -13,6 +13,10 @@ export default function Login(){
         password: ""
     });
 
+    const login = () =>{
+        console.log(formData);
+    }
+
     return(
         <main className="login w-100 h-100">
         <form className="m-auto backBleu">
@@ -34,6 +38,7 @@ export default function Login(){
 
             <Button 
                 text='Se connecter'
+                onClick={login}
             />
         </form>
     </main>
