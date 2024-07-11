@@ -12,7 +12,7 @@ export default function Login(){
     });
 
     return(
-        <main className="backBleu">
+        <main className="backVert w-100 h-100">
         <form>
             <InputLabel 
                 label='Email' 
