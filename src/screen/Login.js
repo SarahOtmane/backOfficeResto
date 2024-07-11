@@ -11,7 +11,8 @@ export default function Login(){
         password: ""
     });
 
-    <main className="backBleu">
+    return(
+        <main className="backBleu">
         <form>
             <InputLabel 
                 label='Email' 
@@ -32,4 +33,5 @@ export default function Login(){
             <Button />
         </form>
     </main>
+    )
 }
