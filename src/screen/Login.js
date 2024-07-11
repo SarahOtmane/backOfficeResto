@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import InputLabel from "../components/InputLable";
+import Button from "../components/Button";
 
 
 
@@ -27,6 +28,8 @@ export default function Login(){
                 value={formData.password}
                 onChange={e => setFormData({...formData, password: e.target.value})}
             />
+
+            <Button />
         </form>
     </main>
 }
