@@ -1,8 +1,8 @@
 
-
+import '../css/components.css'
 
 export default function Button({text}){
     return(
-        <button>{text}</button>
+        <button className="button">{text}</button>
     )
 }
