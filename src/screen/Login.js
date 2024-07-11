@@ -14,8 +14,8 @@ export default function Login(){
     });
 
     return(
-        <main className="login backVert w-100 h-100">
-        <form className="m-auto backBeige">
+        <main className="login w-100 h-100">
+        <form className="m-auto backBleu">
             <InputLabel 
                 label='Email' 
                 type='email'
