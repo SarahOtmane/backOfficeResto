@@ -1,0 +1,62 @@
+/* 
+                Sommaire
+
+        
+    
+
+
+*/
+
+
+/* ----------- 1:= Constantes -------- */
+:root{
+    --noir : #212121;
+    --vert : #68756b;
+    --bleu : #526774;
+    --gris : #bfbdb1;
+    --beige: #fae8da;
+}
+
+
+
+/* ----------- 2:= Global css ----------- */
+
+
+
+
+
+/* ----------- 3:= Global classes ----------- */
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.h-100{
+    min-height: 100vh;
+}
+
+.w-max-c{
+    width: max-content;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.backVert{
+    background-color: var(--vert);
+}
+
+.backBleu{
+    background-color: var(--bleu);
+}
