@@ -2,7 +2,9 @@
 
 
 export default function Login(){
-    <main>
-
+    <main className="backBleu">
+        <form>
+            
+        </form>
     </main>
 }
