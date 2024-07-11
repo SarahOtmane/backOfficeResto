@@ -3,6 +3,8 @@ import { useState } from "react";
 import InputLabel from "../components/InputLable";
 import Button from "../components/Button";
 
+import '../css/login.css';
+
 
 
 export default function Login(){
@@ -12,8 +14,8 @@ export default function Login(){
     });
 
     return(
-        <main className="backVert w-100 h-100">
-        <form>
+        <main className="login backVert w-100 h-100">
+        <form className="m-auto backBeige">
             <InputLabel 
                 label='Email' 
                 type='email'
@@ -30,7 +32,9 @@ export default function Login(){
                 onChange={e => setFormData({...formData, password: e.target.value})}
             />
 
-            <Button />
+            <Button 
+                text='Se connecter'
+            />
         </form>
     </main>
     )
