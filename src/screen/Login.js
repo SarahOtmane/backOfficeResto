@@ -20,9 +20,11 @@ export default function Login(){
 
     return(
         <main className="login w-100 h-100">
-            <img src={logo} alt='logo' />
-            <h1>Admin</h1>
-        <form className="m-auto backBleu">
+        <form className="m-auto backVert">
+            <div className="head row">
+                <img src={logo} alt='logo' />
+                <h1>Admin</h1>
+            </div>
             <InputLabel 
                 label='Email' 
                 type='email'
