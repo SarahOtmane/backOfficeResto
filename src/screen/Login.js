@@ -68,6 +68,7 @@ export default function Login(){
             <Button 
                 text='Se connecter'
                 onClick={login}
+                icon = {false}
             />
         </form>
     </main>
