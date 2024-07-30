@@ -25,6 +25,11 @@ a{
     color: var(--noir);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 
 
 
