@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import InputLabel from "../components/InputLable";
 import Button from "../components/Button";
+import axiosInstance, {addToken} from '../services/axiosInstance';
 
 import '../css/login.css';
 import logo from '../assets/logo.jpg';
@@ -14,8 +15,30 @@ export default function Login(){
         password: ""
     });
 
-    const login = () =>{
-        console.log(formData);
+    const [error, setError] = useState(false);
+
+    const login = async(e) =>{
+        e.preventDefault();
+        
+        try {
+            const response = await axiosInstance.post('/admins/login', formData);
+            const token = response.data.token;
+
+            addToken(token);
+            localStorage.setItem('role', 'admin');
+        } catch (error) {
+            const status = error.response ? error.response.status : 500;
+            switch (status) {
+                case 401:
+                    setError(true);
+                    break;
+                case 404:
+                    setError(true);
+                    break;
+                default:
+                    console.error('Erreur lors de l\'enregistrement de l\'utilisateur:', error);
+            }  
+        }
     }
 
     return(
@@ -25,6 +48,7 @@ export default function Login(){
                 <img src={logo} alt='logo' />
                 <h1>Admin</h1>
             </div>
+            {error && <p style={{ color: 'red' }}>Email ou mot de passe incorrect.</p>}
             <InputLabel 
                 label='Email' 
                 type='email'
