@@ -1,4 +1,5 @@
 import Menu from '../components/Menu';
+import Titre from '../components/Titre';
 
 
 export default function Restos(){
@@ -7,7 +8,7 @@ export default function Restos(){
         <main className='row'>
             <Menu />
             <div className='main backGris restos'>
-                <h1>test</h1>
+                <Titre lien='/admin/restaurants' title='Restaurants' />
             </div>
         </main>
     )
