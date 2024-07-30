@@ -4,6 +4,7 @@ import InputLabel from "../components/InputLable";
 import Button from "../components/Button";
 
 import '../css/login.css';
+import logo from '../assets/logo.jpg';
 
 
 
@@ -19,6 +20,8 @@ export default function Login(){
 
     return(
         <main className="login w-100 h-100">
+            <img src={logo} alt='logo' />
+            <h1>Admin</h1>
         <form className="m-auto backBleu">
             <InputLabel 
                 label='Email' 
