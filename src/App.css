@@ -72,3 +72,7 @@
 .jc_spacebetween{
     justify-content: space-between;
 }
+
+.jc_spacearround{
+    justify-content: space-around;
+}
