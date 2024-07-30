@@ -11,23 +11,23 @@ import LienMenu from './LienMenu';
 export default function Menu(){
     const navigation = [{
         text : 'Restaurants',
-        link : '/restaurants',
+        link : '/admin/restaurants',
         icon : resto
     },{
         text : 'Plan Table',
-        link : '/planTable',
+        link : '/admin/planTable',
         icon : planTable
     },{
         text : 'Informations',
-        link : '/informations',
+        link : '/admin/informations',
         icon : info
     },{
         text : 'Réservations',
-        link : '/reservations',
+        link : '/admin/reservations',
         icon : reservation
     },{
         text : 'Utilisateurs',
-        link : '/utilisateurs',
+        link : '/admin/utilisateurs',
         icon : utilisateurs
     }]
 
