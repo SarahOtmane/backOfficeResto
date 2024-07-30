@@ -25,15 +25,12 @@
     font-size: 1.3rem;
     margin-top: 2rem;
     font-weight: bold;
+    justify-content: center;
 }
 
 .button:hover{
     background-color: white;
     color: black;
-}
-
-.button p{
-    width: 100%;
 }
 
 
