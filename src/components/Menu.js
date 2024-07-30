@@ -32,7 +32,9 @@ export default function Menu(){
     }]
 
     return (
-        <ul>
+        <ul className='navigation'>
+            <h1>Admin</h1>
+            
             {navigation.map(nav => <li>
                 <LienMenu text={nav.text} svg={nav.icon} lien={nav.link} />
             </li>)}
