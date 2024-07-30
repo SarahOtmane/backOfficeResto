@@ -15,6 +15,7 @@
     --bleu : #526774;
     --gris : #bfbdb1;
     --beige: #fae8da;
+    --gris : #EFEFEF;
 }
 
 
@@ -71,6 +72,10 @@ a{
 
 .backBeige{
     background-color: var(--beige);
+}
+
+.backGris{
+    background-color: var(--gris);
 }
 
 .textBold{
