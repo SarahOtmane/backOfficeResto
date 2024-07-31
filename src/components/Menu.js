@@ -18,10 +18,6 @@ export default function Menu(){
         link : '/admin/planTable',
         icon : planTable
     },{
-        text : 'Informations',
-        link : '/admin/informations',
-        icon : info
-    },{
         text : 'Réservations',
         link : '/admin/reservations',
         icon : reservation
@@ -29,7 +25,13 @@ export default function Menu(){
         text : 'Utilisateurs',
         link : '/admin/utilisateurs',
         icon : utilisateurs
-    }]
+    },
+    // {
+    //     text : 'Informations',
+    //     link : '/admin/informations',
+    //     icon : info
+    // }
+    ];
 
     return (
         <ul className='navigation'>
