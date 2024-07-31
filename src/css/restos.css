@@ -36,3 +36,29 @@
     position: absolute;
     right: 11%;
 }
+
+.restos div.tableau{
+    margin-top: 8rem;
+}
+
+.restos div.tableau table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    padding: 0 5rem;
+}
+
+.restos div.tableau thead{
+    border-top: 1px solid #BDDEB4;
+    border-bottom: 1px solid #BDDEB4;
+}
+
+.restos div.tableau thead th{
+    padding: 1rem 0;
+}
+
+.restos div.tableau tbody th{
+    padding: 2rem 2rem 2rem 0;
+    width: max-content;
+    border-bottom: 1px solid var(--gris2);
+}
