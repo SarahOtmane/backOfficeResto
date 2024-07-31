@@ -55,10 +55,17 @@
 
 .restos div.tableau thead th{
     padding: 1rem 0;
+    font-weight: 500;
 }
 
 .restos div.tableau tbody th{
     padding: 2rem 2rem 2rem 0;
     width: max-content;
-    border-bottom: 1px solid var(--gris2);
+    border-bottom: 1px solid var(--gris);
+    font-weight: lighter;
+}
+
+.restos div.tableau th.left{
+    padding-left: 5rem;
+    font-weight: 500;
 }

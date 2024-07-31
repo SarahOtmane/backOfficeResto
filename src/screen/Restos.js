@@ -58,7 +58,7 @@ export default function Restos(){
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Restaurant</th>
+                                    <th className='left'>Restaurant</th>
                                     <th>Nombres de salles</th>
                                     <th>Nombres de places</th>
                                 </tr>
@@ -66,7 +66,7 @@ export default function Restos(){
                             <tbody>
                                 {restos.map((resto) => (
                                     <tr key={resto.id}>
-                                        <th>{resto.name}</th>
+                                        <th className='left'>{resto.name}</th>
                                         <th>{resto.nbSalles}</th>
                                         <th>{resto.nbPlaces}</th>
                                     </tr>
