@@ -18,6 +18,10 @@ export default function Menu(){
         link : '/admin/planTable',
         icon : planTable
     },{
+        text : 'Informations',
+        link : '/admin/informations',
+        icon : info
+    },{
         text : 'Réservations',
         link : '/admin/reservations',
         icon : reservation
@@ -25,21 +29,19 @@ export default function Menu(){
         text : 'Utilisateurs',
         link : '/admin/utilisateurs',
         icon : utilisateurs
-    },
-    // {
-    //     text : 'Informations',
-    //     link : '/admin/informations',
-    //     icon : info
-    // }
-    ];
+    }];
 
     return (
-        <ul className='navigation'>
+        <div>
             <h1>Admin</h1>
+
+            <ul className='navigation'>
+
+                {navigation.map(nav => <li>
+                    <LienMenu text={nav.text} svg={nav.icon} lien={nav.link} />
+                </li>)}
+            </ul>
             
-            {navigation.map(nav => <li>
-                <LienMenu text={nav.text} svg={nav.icon} lien={nav.link} />
-            </li>)}
-        </ul>
+        </div>
     )
 }
