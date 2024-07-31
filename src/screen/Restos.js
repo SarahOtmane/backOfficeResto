@@ -18,10 +18,10 @@ export default function Restos(){
             nbSalles : 2,
             nbPlaces : 50
         }, {
-            id : 1,
-            name: 'Le Végétal',
-            nbSalles : 2,
-            nbPlaces : 50
+            id : 2,
+            name: 'Le Félix',
+            nbSalles : 1,
+            nbPlaces : 15
         }]);
     }, []);
 
