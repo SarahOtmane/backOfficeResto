@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Button from '../components/Button';
 import Menu from '../components/Menu';
@@ -9,6 +9,21 @@ import '../css/restos.css';
 
 export default function Restos(){
     const [recherche, setRecherche] = useState('');
+    const [restos, setRestos] = useState([]);
+
+    useEffect(() => {
+        setRestos([{
+            id : 1,
+            name: 'Le Végétal',
+            nbSalles : 2,
+            nbPlaces : 50
+        }, {
+            id : 1,
+            name: 'Le Végétal',
+            nbSalles : 2,
+            nbPlaces : 50
+        }]);
+    }, []);
 
     const addRestaurent = (e) =>{
         e.preventDefault();
@@ -39,6 +54,27 @@ export default function Restos(){
                             <path d="M18.5224 19.0156L14.5781 15.0713" stroke="#1E1E1E" strokeWidth="1.44" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </article>
+                    <div className='tableau'>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Restaurant</th>
+                                    <th>Nombres de salles</th>
+                                    <th>Nombres de places</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {restos.map((resto) => (
+                                    <tr key={resto.id}>
+                                        <th>{resto.name}</th>
+                                        <th>{resto.nbSalles}</th>
+                                        <th>{resto.nbPlaces}</th>
+                                    </tr>
+                                ))} 
+                            </tbody>
+                        </table>
+                    </div>
+                    
                 </section>
             </div>
         </main>
