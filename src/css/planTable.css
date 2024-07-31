@@ -1,0 +1,27 @@
+.plantable div.resto_card{
+    padding: 1.5rem 0;
+    width: max-content;
+    margin: auto;
+    justify-content: center;
+    background-color: var(--vert);
+    border-radius: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin-top: 3rem;
+}
+
+.plantable div.resto_card button{
+    background-color: var(--vert);
+    border: 1px solid var(--vert);
+    padding: 1rem 2rem;
+    margin: 0 2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+}  
+
+.plantable div.resto_card button.selected{
+    color: black;
+    background-color: white;
+}
