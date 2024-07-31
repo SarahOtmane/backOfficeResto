@@ -1,3 +1,38 @@
 .restos .button{
-    width: 20%;
+    width: max-content;
+    margin: 0;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.restos .recherche{
+    width: 20rem;
+    height: 3.4rem;
+    border-radius: .5rem;
+    margin-left: 1rem;
+    padding-left: .5rem;
+}
+
+.restos section.container{
+    background-color: white;
+    border: 1px solid var(--gris2);
+    border-radius: .5rem;
+    padding: 3rem 0;
+    margin-top: 5rem;
+}
+
+.restos article.head{
+    padding: 0 5rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.restos article.head h4{
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+
+.restos article.head .svg{
+    position: absolute;
+    right: 11%;
 }
