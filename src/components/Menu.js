@@ -18,6 +18,10 @@ export default function Menu(){
         link : '/admin/planTable',
         icon : planTable
     },{
+        text : 'Tables',
+        link : '/admin/tables',
+        icon : planTable
+    },{
         text : 'Informations',
         link : '/admin/informations',
         icon : info
