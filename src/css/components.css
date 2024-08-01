@@ -27,6 +27,7 @@
     margin-top: 2rem;
     font-weight: bold;
     justify-content: center;
+    cursor: pointer;
 }
 
 .button:hover{
