@@ -1,0 +1,139 @@
+/*****************************************************
+                    Sommaire
+
+    1:= login
+    2:= restoCard 
+    3:= tableau
+    4:= head
+
+*****************************************************/
+
+
+.restos .button{
+    width: max-content;
+    margin: 0;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.restos .recherche{
+    width: 20rem;
+    height: 3.4rem;
+    border-radius: .5rem;
+    margin-left: 1rem;
+    padding-left: .5rem;
+}
+
+
+
+/* ----------- 1:= login -------- */
+.login{
+    padding-top: 10rem;
+}
+
+.login form{
+    width: 25%;
+    padding: 5rem;
+    border-radius: 2rem;
+}
+
+.login div.head{
+    width: 90%;
+    margin: auto;
+    color: white;
+    margin-bottom: 5rem;
+}
+
+.login img{
+    width: 20%;
+    border-radius: 1rem;
+    margin-right: 10%;
+}
+
+
+
+
+/* ----------- 2:= restoCard -------- */
+div.resto_card{
+    padding: 1.5rem 0;
+    width: max-content;
+    margin: auto;
+    justify-content: center;
+    background-color: var(--vert);
+    border-radius: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin-top: 3rem;
+}
+
+div.resto_card button{
+    background-color: var(--vert);
+    border: 1px solid var(--vert);
+    padding: 1rem 2rem;
+    margin: 0 2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+}  
+
+div.resto_card button.selected{
+    color: black;
+    background-color: white;
+}
+
+
+
+/* ----------- 3:= tableau -------- */
+div.tableau{
+    margin-top: 8rem;
+}
+
+div.tableau table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    padding: 0 5rem;
+}
+
+div.tableau thead{
+    border-top: 1px solid #BDDEB4;
+    border-bottom: 1px solid #BDDEB4;
+}
+
+div.tableau thead th{
+    padding: 1rem 0;
+    font-weight: 500;
+}
+
+div.tableau tbody th{
+    padding: 2rem 2rem 2rem 0;
+    width: max-content;
+    border-bottom: 1px solid var(--gris);
+    font-weight: lighter;
+}
+
+div.tableau th.left{
+    padding-left: 5rem;
+    font-weight: 500;
+}
+
+
+
+
+/* ----------- 4:= head -------- */
+article.head{
+    padding: 0 5rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+article.head h4{
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+
+.restos article.head .svg{
+    position: absolute;
+    right: 11%;
+}
