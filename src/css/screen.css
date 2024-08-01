@@ -104,6 +104,15 @@ div.tableau th.left{
     font-weight: 500;
 }
 
+.table div.tableau .button{
+    background-color: white;
+    color: black;
+}
+
+.table div.tableau .button:hover{
+    background-color: black;
+    color: white;
+}
 
 
 
