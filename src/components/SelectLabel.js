@@ -1,11 +1,11 @@
 import SelectForm from "./Select";
 
 
-export default function SelectLabel({command, setCommand, name, label}){
+export default function SelectLabel({name, label}){
     return(
         <>
             <label>{label}</label>
-            <SelectForm name={name} command={command} setCommand={setCommand} />
+            <SelectForm name={name} />
         </>
     )
 }
