@@ -6,6 +6,7 @@
     3:= tableau ( all screen )
     4:= head ( all screen )
     5:= restos (restos screen)
+    6:= tableForm (table screen)
 
 *****************************************************/
 
@@ -126,12 +127,10 @@ article.head h4{
 
 
 
-/* ----------- 4:= restos -------- */
-.restos .button{
+/* ----------- 5:= restos -------- */
+.restos .button, .table .head .button{
     width: max-content;
     margin: 0;
-    font-size: 1rem;
-    align-items: center;
 }
 
 .restos .recherche{
@@ -140,4 +139,30 @@ article.head h4{
     border-radius: .5rem;
     margin-left: 1rem;
     padding-left: .5rem;
+}
+
+
+
+
+/* ----------- 6:= tableForm -------- */
+.tableForm{
+    padding: 4rem 5rem 2rem;
+}
+
+.tableForm > div{
+    width: 50%;
+}
+
+.tableForm > div:first-child{
+    margin-right: 3rem;
+}
+
+.tableForm > div label{
+    margin-bottom: .5rem;
+}
+
+.tableForm .button{
+    width: max-content;
+    margin-left: 5rem;
+    padding: 1rem 4rem;
 }
