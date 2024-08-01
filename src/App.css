@@ -96,3 +96,11 @@ a{
     width: 80vw;
     padding: 3rem 5rem;
 }
+
+section.container{
+    background-color: white;
+    border: 1px solid var(--gris2);
+    border-radius: .5rem;
+    padding: 3rem 0;
+    margin-top: 5rem;
+}
