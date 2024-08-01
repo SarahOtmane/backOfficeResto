@@ -4,7 +4,8 @@ import InputLabel from "../components/InputLable";
 import Button from "../components/Button";
 import axiosInstance, {addToken} from '../services/axiosInstance';
 
-import '../css/login.css';
+import '../css/screen.css';
+
 import logo from '../assets/logo.jpg';
 
 

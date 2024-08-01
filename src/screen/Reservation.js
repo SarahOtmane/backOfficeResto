@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import Menu from "../components/Menu";
 import Titre from "../components/Titre";
 
+import '../css/screen.css';
+
 
 
 export default function Reservation(){

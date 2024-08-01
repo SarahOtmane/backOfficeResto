@@ -4,7 +4,7 @@ import Button from '../components/Button';
 import Menu from '../components/Menu';
 import Titre from '../components/Titre';
 
-import '../css/restos.css';
+import '../css/screen.css';
 
 
 export default function Restos(){

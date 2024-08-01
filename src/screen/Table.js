@@ -1,7 +1,8 @@
 import Menu from "../components/Menu";
+import SelectLabel from "../components/SelectLabel";
 import Titre from "../components/Titre";
 
-
+import '../css/screen.css';
 
 
 export default function Table(){
@@ -15,8 +16,9 @@ export default function Table(){
                     <article className="row head">
                         <h4>Tables</h4>
                     </article>
-                    <form>
-                        
+                    <form className="row">
+                        <SelectLabel label='Restaurants' name='restaurants' />
+                        <SelectLabel label='Salle' name='planTables' />
                     </form>
                 </section>
             </div>
