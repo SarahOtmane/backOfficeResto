@@ -1,28 +1,13 @@
 /*****************************************************
                     Sommaire
 
-    1:= login
-    2:= restoCard 
-    3:= tableau
-    4:= head
+    1:= login (login screen)
+    2:= restoCard (planTable screen and reservation screen)
+    3:= tableau ( all screen )
+    4:= head ( all screen )
+    5:= restos (restos screen)
 
 *****************************************************/
-
-
-.restos .button{
-    width: max-content;
-    margin: 0;
-    font-size: 1rem;
-    align-items: center;
-}
-
-.restos .recherche{
-    width: 20rem;
-    height: 3.4rem;
-    border-radius: .5rem;
-    margin-left: 1rem;
-    padding-left: .5rem;
-}
 
 
 
@@ -136,4 +121,23 @@ article.head h4{
 .restos article.head .svg{
     position: absolute;
     right: 11%;
+}
+
+
+
+
+/* ----------- 4:= restos -------- */
+.restos .button{
+    width: max-content;
+    margin: 0;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.restos .recherche{
+    width: 20rem;
+    height: 3.4rem;
+    border-radius: .5rem;
+    margin-left: 1rem;
+    padding-left: .5rem;
 }
