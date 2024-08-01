@@ -13,7 +13,7 @@
     padding-left: .5rem;
 }
 
-.restos section.container, .plantable section.container{
+section.container{
     background-color: white;
     border: 1px solid var(--gris2);
     border-radius: .5rem;
@@ -21,13 +21,13 @@
     margin-top: 5rem;
 }
 
-.restos article.head, .plantable article.head{
+article.head{
     padding: 0 5rem;
     align-items: center;
     justify-content: flex-end;
 }
 
-.restos article.head h4, .plantable article.head h4{
+article.head h4{
     margin-right: auto;
     font-size: 1.5rem;
 }
@@ -37,7 +37,7 @@
     right: 11%;
 }
 
-.restos div.tableau, .plantable div.tableau{
+div.tableau{
     margin-top: 8rem;
 }
 
