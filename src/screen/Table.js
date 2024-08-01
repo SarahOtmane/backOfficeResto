@@ -15,6 +15,9 @@ export default function Table(){
                     <article className="row head">
                         <h4>Tables</h4>
                     </article>
+                    <form>
+                        
+                    </form>
                 </section>
             </div>
         </main>
