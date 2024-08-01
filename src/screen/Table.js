@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Button from "../components/Button";
 import Menu from "../components/Menu";
 import SelectLabel from "../components/SelectLabel";
@@ -7,6 +9,22 @@ import '../css/screen.css';
 
 
 export default function Table(){
+    const [tables, setTables] = useState([{
+        id: 1,
+        numero: 1,
+        nbPlaces: 2,
+        taken : false
+    },{
+        id: 2,
+        numero: 2,
+        nbPlaces: 4,
+        taken : true
+    },{
+        id: 3,
+        numero: 3,
+        nbPlaces: 2,
+        taken : false
+    }]);
     
     return(
         <main className="row"> 
@@ -29,6 +47,30 @@ export default function Table(){
                             icon={false}
                         />
                     </form>
+                    <div className="tableau">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th className='left'>Numéro de table</th>
+                                    <th>Nombre de places</th>
+                                    <th>État</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {tables.map((table) =>(
+                                    <tr key={table.id}>
+                                        <th className='left'>{table.numero}</th>
+                                        <th>{table.nbPlaces}</th>
+                                        <th>{table.taken ? 'Réservée' : 'Libre'}</th>
+                                        <th><Button text='Modifier' icon={true} /></th>
+                                        <th><Button text='Supprimer' icon={true} /></th>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
                 </section>
             </div>
         </main>
